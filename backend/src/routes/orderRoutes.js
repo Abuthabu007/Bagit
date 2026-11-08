@@ -3,12 +3,12 @@ import { createOrder, listOrders } from "../services/orderService.js";
 
 export const orderRoutes = Router();
 
-orderRoutes.get("/", (_request, response) => {
-  response.json(listOrders());
+orderRoutes.get("/", async (_request, response) => {
+  response.json(await listOrders());
 });
 
-orderRoutes.post("/", (request, response) => {
-  const result = createOrder(request.body ?? {});
+orderRoutes.post("/", async (request, response) => {
+  const result = await createOrder(request.body ?? {});
 
   if (result.error) {
     return response.status(result.status).json({ error: result.error });

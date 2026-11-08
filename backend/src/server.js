@@ -24,6 +24,11 @@ app.get("/readyz", async (_request, response) => {
   }
 });
 
+app.use((error, _request, response, _next) => {
+  console.error("Unhandled request error:", error);
+  response.status(500).json({ error: "Internal server error" });
+});
+
 app.listen(port, "0.0.0.0", () => {
   console.log(`API listening on port ${port}`);
 });
