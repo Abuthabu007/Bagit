@@ -1,0 +1,492 @@
+[
+  {
+    "file": "p-1001-01.jpg",
+    "productId": "p-1001",
+    "commonsTitle": "File:Mechanical keyboard example.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AMechanical_keyboard_example.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "creator": "Thanasis Termitzoglou",
+    "credit": "Own work"
+  },
+  {
+    "file": "p-1001-02.jpg",
+    "productId": "p-1001",
+    "commonsTitle": "File:Mechanical Keyboard.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AMechanical_Keyboard.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "creator": "SolarMainframe",
+    "credit": "Own work"
+  },
+  {
+    "file": "p-1001-03.jpg",
+    "productId": "p-1001",
+    "commonsTitle": "File:Beautiful Mechanical Keyboard.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3ABeautiful_Mechanical_Keyboard.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "creator": "Anirban Saha",
+    "credit": "https://techbullish.com"
+  },
+  {
+    "file": "p-1001-04.jpg",
+    "productId": "p-1001",
+    "commonsTitle": "File:Microcenter keyboard isle.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AMicrocenter_keyboard_isle.jpg",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "creator": "Punker1999",
+    "credit": "Own work"
+  },
+  {
+    "file": "p-1001-05.jpg",
+    "productId": "p-1001",
+    "commonsTitle": "File:Mechanical keyboard caps at Comic Fiesta 2024.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AMechanical_keyboard_caps_at_Comic_Fiesta_2024.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "creator": "PeaceSeekers",
+    "credit": "Own work"
+  },
+  {
+    "file": "p-1001-06.jpg",
+    "productId": "p-1001",
+    "commonsTitle": "File:MX brown key switches.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AMX_brown_key_switches.jpg",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "creator": "ptm m",
+    "credit": "https://www.flickr.com/photos/192698763@N03/51154489717/"
+  },
+  {
+    "file": "p-1001-07.jpg",
+    "productId": "p-1001",
+    "commonsTitle": "File:Mechanical keyboard cables collection.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AMechanical_keyboard_cables_collection.jpg",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "creator": "PeaceSeekers",
+    "credit": "Own work"
+  },
+  {
+    "file": "p-1002-01.jpg",
+    "productId": "p-1002",
+    "commonsTitle": "File:A wireless computer mouse.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AA_wireless_computer_mouse.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "creator": "Pixloom",
+    "credit": "https://www.pixloom.com"
+  },
+  {
+    "file": "p-1002-02.jpg",
+    "productId": "p-1002",
+    "commonsTitle": "File:A black wireless computer mouse.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AA_black_wireless_computer_mouse.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "creator": "Pixloom",
+    "credit": "https://www.pixloom.com"
+  },
+  {
+    "file": "p-1002-03.jpg",
+    "productId": "p-1002",
+    "commonsTitle": "File:Wireless computer keyboard with mouse an USB receiver.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AWireless_computer_keyboard_with_mouse_an_USB_receiver.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "creator": "Andreas Schwarzkopf",
+    "credit": "Own work"
+  },
+  {
+    "file": "p-1002-04.jpg",
+    "productId": "p-1002",
+    "commonsTitle": "File:Wireless Logilink Computer mouse with USB Micro Dongle.JPG",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AWireless_Logilink_Computer_mouse_with_USB_Micro_Dongle.JPG",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "creator": "Mattes",
+    "credit": "Own work"
+  },
+  {
+    "file": "p-1002-05.jpg",
+    "productId": "p-1002",
+    "commonsTitle": "File:Wireless mouse block.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AWireless_mouse_block.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "creator": "SanthoshKhan Annadhurai",
+    "credit": "Own work"
+  },
+  {
+    "file": "p-1002-06.jpg",
+    "productId": "p-1002",
+    "commonsTitle": "File:Wireless computer mouse.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AWireless_computer_mouse.jpg",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "creator": "sarang 사랑",
+    "credit": "Own work"
+  },
+  {
+    "file": "p-1002-07.jpg",
+    "productId": "p-1002",
+    "commonsTitle": "File:Acer computer mouse on paper.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AAcer_computer_mouse_on_paper.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "creator": "Bhullargraphic",
+    "credit": "Own work"
+  },
+  {
+    "file": "p-1003-01.jpg",
+    "productId": "p-1003",
+    "commonsTitle": "File:Multi-USB and charger.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AMulti-USB_and_charger.jpg",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "creator": "SD hehua",
+    "credit": "Own work"
+  },
+  {
+    "file": "p-1003-02.jpg",
+    "productId": "p-1003",
+    "commonsTitle": "File:Battery charger set C76A Pro in Tashkent Region.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3ABattery_charger_set_C76A_Pro_in_Tashkent_Region.jpg",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "creator": "Sevayuu",
+    "credit": "Own work"
+  },
+  {
+    "file": "p-1003-03.jpg",
+    "productId": "p-1003",
+    "commonsTitle": "File:Panasonic ENELOOP PRO Ni-MH BATTERIES & BATTERY CHARGER BQ-CC55C (2).jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3APanasonic_ENELOOP_PRO_Ni-MH_BATTERIES_%26_BATTERY_CHARGER_BQ-CC55C_(2).jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "creator": "Dinkun Chen",
+    "credit": "Own work"
+  },
+  {
+    "file": "p-1003-04.jpg",
+    "productId": "p-1003",
+    "commonsTitle": "File:Panasonic ENELOOP PRO Ni-MH BATTERIES & BATTERY CHARGER BQ-CC55C.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3APanasonic_ENELOOP_PRO_Ni-MH_BATTERIES_%26_BATTERY_CHARGER_BQ-CC55C.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "creator": "Dinkun Chen",
+    "credit": "Own work"
+  },
+  {
+    "file": "p-1003-05.jpg",
+    "productId": "p-1003",
+    "commonsTitle": "File:USB AA battery charger 1.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AUSB_AA_battery_charger_1.jpg",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "creator": "Limor from New York CIty, USA",
+    "credit": "usbcharger"
+  },
+  {
+    "file": "p-1003-06.jpg",
+    "productId": "p-1003",
+    "commonsTitle": "File:Battery Charger.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3ABattery_Charger.jpg",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "creator": "Pulserbd",
+    "credit": "Own work"
+  },
+  {
+    "file": "p-1003-07.jpg",
+    "productId": "p-1003",
+    "commonsTitle": "File:USB AA battery charger 2.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AUSB_AA_battery_charger_2.jpg",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "creator": "Limor from New York CIty, USA",
+    "credit": "usbcharger"
+  },
+  {
+    "file": "p-1004-01.jpg",
+    "productId": "p-1004",
+    "commonsTitle": "File:Bose QuietComfort 25 Acoustic Noise Cancelling Headphones with Carry Case.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3ABose_QuietComfort_25_Acoustic_Noise_Cancelling_Headphones_with_Carry_Case.jpg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "creator": "Florian Fuchs",
+    "credit": "Own work"
+  },
+  {
+    "file": "p-1004-02.jpg",
+    "productId": "p-1004",
+    "commonsTitle": "File:ActiveSound wireless earbuds by Hykker (POJM200483).jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AActiveSound_wireless_earbuds_by_Hykker_(POJM200483).jpg",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "creator": "Warszawska róg Szerokiej w Tomaszowie Mazowieckim, w województwie łódzkim, PL, EU",
+    "credit": "Own work"
+  },
+  {
+    "file": "p-1004-03.jpg",
+    "productId": "p-1004",
+    "commonsTitle": "File:Cycling Amsterdam 03.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3ACycling_Amsterdam_03.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "creator": "Alfredo Borba",
+    "credit": "Own work"
+  },
+  {
+    "file": "p-1004-04.jpg",
+    "productId": "p-1004",
+    "commonsTitle": "File:Yamaha TW-E3A Earbuds Customize, Japan; April 2021 (01).jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AYamaha_TW-E3A_Earbuds_Customize%2C_Japan%3B_April_2021_(01).jpg",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "creator": "MIKI Yoshihito. (#mikiyoshihito)",
+    "credit": "https://www.flickr.com/photos/7940758@N07/51107158774/"
+  },
+  {
+    "file": "p-1004-05.jpg",
+    "productId": "p-1004",
+    "commonsTitle": "File:Headphones on white background.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AHeadphones_on_white_background.jpg",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "creator": "Sprinno",
+    "credit": "Own work"
+  },
+  {
+    "file": "p-1004-06.jpg",
+    "productId": "p-1004",
+    "commonsTitle": "File:Headphones on desk.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AHeadphones_on_desk.jpg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "creator": "Lirazelf",
+    "credit": "Own work"
+  },
+  {
+    "file": "p-1004-07.jpg",
+    "productId": "p-1004",
+    "commonsTitle": "File:Headphones 1.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AHeadphones_1.jpg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "creator": "No machine-readable author provided. PJ assumed (based on copyright claims).",
+    "credit": "No machine-readable source provided. Own work assumed (based on copyright claims)."
+  },
+  {
+    "file": "p-1005-01.jpg",
+    "productId": "p-1005",
+    "commonsTitle": "File:Laptop Case - texture.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3ALaptop_Case_-_texture.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "creator": "Colin",
+    "credit": "Own work"
+  },
+  {
+    "file": "p-1005-02.jpg",
+    "productId": "p-1005",
+    "commonsTitle": "File:Laptop Case Merchandise of WikiPandu.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3ALaptop_Case_Merchandise_of_WikiPandu.jpg",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "creator": "WikiPandu Team",
+    "credit": "Personal source"
+  },
+  {
+    "file": "p-1005-03.jpg",
+    "productId": "p-1005",
+    "commonsTitle": "File:Cozistyle Stand Sleeve.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3ACozistyle_Stand_Sleeve.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "creator": "Richardinsky",
+    "credit": "Own work"
+  },
+  {
+    "file": "p-1005-04.jpg",
+    "productId": "p-1005",
+    "commonsTitle": "File:WaterAsGround.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AWaterAsGround.jpg",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "creator": "Snizhko Nikita Vasilevich",
+    "credit": "Own work"
+  },
+  {
+    "file": "p-1005-05.jpg",
+    "productId": "p-1005",
+    "commonsTitle": "File:Shirt braces. Brilliant (5904379584).jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AShirt_braces._Brilliant_(5904379584).jpg",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "creator": "David, Bergin, Emmett and Elliott",
+    "credit": "Shirt braces. Brilliant"
+  },
+  {
+    "file": "p-1005-06.jpg",
+    "productId": "p-1005",
+    "commonsTitle": "File:Webschule.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AWebschule.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "creator": "Wast1234",
+    "credit": "Own work"
+  },
+  {
+    "file": "p-1005-07.jpg",
+    "productId": "p-1005",
+    "commonsTitle": "File:HarddriveAndDiskDriveInAAsusGl553VD.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AHarddriveAndDiskDriveInAAsusGl553VD.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "creator": ".mw-parser-output .template-designermadsen-source{border:1px solid #a2a9b1;background-color:#f8f9fa;display:grid;padding-left:4em;padding-right:4em;grid-template-columns:1fr 8fr;grid-template-rows:1fr;grid-column-gap:4em}.mw-parser-output .tdm-flex-container-center{width:100%;margin:0px;padding:0px;display:flex;justify-content:center;flex-direction:row}.mw-parser-output .template-designermadsen-source .tdm-avatar{display:flex;justify-content:center;flex-wrap:wrap;flex-direction:column;width:100%;margin-top:1em;margin-bottom:1em}.mw-parser-output .tdm-avatar img{border:1px solid #a2a9b1;padding:0.25em 0.25em}.mw-parser-output .template-designermadsen-source .tdm-attributes{width:100%;display:flex;flex-direction:column;justify-content:center;margin-top:1em;margin-bottom:1em}.mw-parser-output .template-designermadsen-source .tdm-attributes p{width:100%;margin-top:0.5em;margin-bottom:0.5em}@media only screen and (max-width:764px){.mw-parser-output .template-designermadsen-source{grid-template-columns:1fr;grid-template-rows:1fr 1fr;grid-column-gap:0px}.mw-parser-output .template-designermadsen-source .tdm-avatar{}.mw-parser-output .template-designermadsen-source .tdm-attributes{justify-content:center;text-align:center}} Author: Kent Madsen Designermadsen Flickr Deviantart",
+    "credit": "Own work"
+  },
+  {
+    "file": "p-2001-01.jpg",
+    "productId": "p-2001",
+    "commonsTitle": "File:Stainless Steel Water Bottle.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AStainless_Steel_Water_Bottle.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "creator": "Gannu03",
+    "credit": "Own work"
+  },
+  {
+    "file": "p-2001-02.jpg",
+    "productId": "p-2001",
+    "commonsTitle": "File:Niksun stainless steel water bottle.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3ANiksun_stainless_steel_water_bottle.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "creator": "Jonathan Schilling",
+    "credit": "Own work"
+  },
+  {
+    "file": "p-2001-03.jpg",
+    "productId": "p-2001",
+    "commonsTitle": "File:Stainless steel water bottle.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AStainless_steel_water_bottle.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "creator": "Corn cheese",
+    "credit": "Own work"
+  },
+  {
+    "file": "p-2001-04.jpg",
+    "productId": "p-2001",
+    "commonsTitle": "File:HK CWB Saint Mary's Church Bday 暖水壺 hot drinking water Stainless steel thermos bottles Vacuum flasks May-2013.JPG",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AHK_CWB_Saint_Mary's_Church_Bday_%E6%9A%96%E6%B0%B4%E5%A3%BA_hot_drinking_water_Stainless_steel_thermos_bottles_Vacuum_flasks_May-2013.JPG",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "creator": "Ewloskalw",
+    "credit": "Own work"
+  },
+  {
+    "file": "p-2001-05.jpg",
+    "productId": "p-2001",
+    "commonsTitle": "File:EFTA00002185 - Small kitchen with a white table black chairs stainless steel refrigerator and tiled floor A window above the table lets in natural light The fridge has a water bottle on top.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AEFTA00002185_-_Small_kitchen_with_a_white_table_black_chairs_stainless_steel_refrigerator_and_tiled_floor_A_window_above_the_table_lets_in_natural_light_The_fridge_has_a_water_bottle_on_top.jpg",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "creator": "Federal Bureau of Investigation",
+    "credit": "https://www.justice.gov/epstein/doj-disclosures"
+  },
+  {
+    "file": "p-2001-06.jpg",
+    "productId": "p-2001",
+    "commonsTitle": "File:EFTA00000386 - Kitchenette with large water bottles utensils and a cart leading to a stainless steel kitchen area with black-and-white checkered flooring.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AEFTA00000386_-_Kitchenette_with_large_water_bottles_utensils_and_a_cart_leading_to_a_stainless_steel_kitchen_area_with_black-and-white_checkered_flooring.jpg",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "creator": "Federal Bureau of Investigation",
+    "credit": "https://www.justice.gov/epstein/doj-disclosures"
+  },
+  {
+    "file": "p-2001-07.jpg",
+    "productId": "p-2001",
+    "commonsTitle": "File:EFTA00000962 - Stainless steel elevator door stands beside a water cooler with a large blue bottle on top adjacent to a dining area featuring a black table and white chairs under a decorative hanging light....jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AEFTA00000962_-_Stainless_steel_elevator_door_stands_beside_a_water_cooler_with_a_large_blue_bottle_on_top_adjacent_to_a_dining_area_featuring_a_black_table_and_white_chairs_under_a_decorative_hanging_light....jpg",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "creator": "Federal Bureau of Investigation",
+    "credit": "https://www.justice.gov/epstein/doj-disclosures"
+  },
+  {
+    "file": "p-2002-01.jpg",
+    "productId": "p-2002",
+    "commonsTitle": "File:Heirloom range coffee pot and mug, V&A London.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AHeirloom_range_coffee_pot_and_mug%2C_V%26A_London.jpg",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "creator": "14GTR",
+    "credit": "Own work"
+  },
+  {
+    "file": "p-2002-02.jpg",
+    "productId": "p-2002",
+    "commonsTitle": "File:White Ceramic Mug Filled With Coffee Beside Coffee Beans (43087322071).jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AWhite_Ceramic_Mug_Filled_With_Coffee_Beside_Coffee_Beans_(43087322071).jpg",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "creator": "Janko Ferlic",
+    "credit": "https://www.pexels.com/photo/white-ceramic-mug-filled-with-coffee-beside-coffee-beans-678654/"
+  },
+  {
+    "file": "p-2002-03.jpg",
+    "productId": "p-2002",
+    "commonsTitle": "File:Moustache coffee mug 001.JPG",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AMoustache_coffee_mug_001.JPG",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "creator": "Stephen B Calvert Clariosophic",
+    "credit": "Own work"
+  },
+  {
+    "file": "p-2002-04.jpg",
+    "productId": "p-2002",
+    "commonsTitle": "File:White Ceramic Coffee Mug With Color Transfer Image of Palace of Manufactures.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3AWhite_Ceramic_Coffee_Mug_With_Color_Transfer_Image_of_Palace_of_Manufactures.jpg",
+    "license": "Attribution",
+    "licenseUrl": "",
+    "creator": "Unknown author Unknown author",
+    "credit": "Missouri History Museum URL: http://images.mohistory.org/image/640D08B1-A554-572D-FCCD-0AB05C1E7DA8/original.jpg Gallery: http://collections.mohistory.org/resource/97850"
+  },
+  {
+    "file": "p-2002-05.jpg",
+    "productId": "p-2002",
+    "commonsTitle": "File:2003 Retford King Edward VI Grammar School closure ceramic mug 3.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3A2003_Retford_King_Edward_VI_Grammar_School_closure_ceramic_mug_3.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "creator": "Gedgmoss",
+    "credit": "Own work"
+  },
+  {
+    "file": "p-2002-06.jpg",
+    "productId": "p-2002",
+    "commonsTitle": "File:2003 Retford King Edward VI Grammar School closure ceramic mug 2.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3A2003_Retford_King_Edward_VI_Grammar_School_closure_ceramic_mug_2.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "creator": "Gedgmoss",
+    "credit": "Own work"
+  },
+  {
+    "file": "p-2002-07.jpg",
+    "productId": "p-2002",
+    "commonsTitle": "File:Ceramic White and Teal Coffee Mug With Color Transfer Image of Palace of Manufactures.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File%3ACeramic_White_and_Teal_Coffee_Mug_With_Color_Transfer_Image_of_Palace_of_Manufactures.jpg",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "creator": "Unknown author Unknown author",
+    "credit": "Missouri History Museum URL: http://images.mohistory.org/image/72AEC2F5-5624-C5C3-BE21-130E25BB6FE9/original.jpg Gallery: http://collections.mohistory.org/resource/98129"
+  }
+]

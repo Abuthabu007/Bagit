@@ -1,13 +1,22 @@
 import express from "express";
 import { productRoutes } from "./routes/productRoutes.js";
 import { orderRoutes } from "./routes/orderRoutes.js";
+import { authRoutes } from "./routes/authRoutes.js";
+import { deliveryRoutes } from "./routes/deliveryRoutes.js";
 import { pool } from "./db/pool.js";
 
 const app = express();
 const port = Number(process.env.PORT ?? 3000);
+app.set("etag", false);
 app.use(express.json());
+app.use("/api", (_request, response, next) => {
+  response.setHeader("Cache-Control", "no-store");
+  next();
+});
 app.use("/api/products", productRoutes);
 app.use("/api/orders", orderRoutes);
+app.use("/api/auth", authRoutes);
+app.use("/api/delivery", deliveryRoutes);
 
 
 app.get("/healthz", (_request, response) => {

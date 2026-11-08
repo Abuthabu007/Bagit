@@ -7,8 +7,11 @@ CREATE TABLE IF NOT EXISTS products (
   created_at timestamptz NOT NULL DEFAULT now()
 );
 
+CREATE SEQUENCE IF NOT EXISTS order_number_seq START WITH 1;
+
 CREATE TABLE IF NOT EXISTS orders (
   id uuid PRIMARY KEY,
+  order_number text NOT NULL UNIQUE,
   status text NOT NULL CHECK (
     status IN ('pending', 'confirmed', 'shipped', 'cancelled')
   ),
@@ -27,6 +30,6 @@ CREATE TABLE IF NOT EXISTS order_items (
 
 INSERT INTO products (id, name, price_cents, currency, stock)
 VALUES
-  ('p-1001', 'Mechanical Keyboard', 6999, 'USD', 12),
-  ('p-1002', 'Wireless Mouse', 2499, 'USD', 20)
+  ('p-1001', 'Mechanical Keyboard', 549900, 'INR', 12),
+  ('p-1002', 'Wireless Mouse', 179900, 'INR', 20)
 ON CONFLICT (id) DO NOTHING;
