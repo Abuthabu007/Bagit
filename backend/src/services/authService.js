@@ -14,20 +14,6 @@ const otpLifetimeSeconds = 5 * 60;
 const maxOtpAttempts = 5;
 const maxOtpRequestsPerHour = 3;
 const sessionLifetimeDays = 7;
-const serviceablePincodes = new Set([
-  "110001",
-  "110016",
-  "400001",
-  "400051",
-  "411001",
-  "500001",
-  "560001",
-  "560034",
-  "600001",
-  "600062",
-  "700001",
-]);
-
 function normalizeIndianPhone(phone) {
   if (typeof phone !== "string") {
     return undefined;
@@ -125,21 +111,6 @@ function isMatchingHash(expectedHash, candidateHash) {
   const expected = Buffer.from(expectedHash, "hex");
   const candidate = Buffer.from(candidateHash, "hex");
   return expected.length === candidate.length && timingSafeEqual(expected, candidate);
-}
-
-export function checkMockServiceability(pincode) {
-  if (typeof pincode !== "string" || !/^[1-9]\d{5}$/.test(pincode)) {
-    return { status: 400, error: "Enter a valid 6-digit Indian PIN code" };
-  }
-
-  const serviceable = serviceablePincodes.has(pincode);
-  return {
-    status: 200,
-    serviceable,
-    message: serviceable
-      ? "Delivery is available in this demo PIN code"
-      : "Delivery is not available in this demo PIN code yet",
-  };
 }
 
 export async function requestSignupOtp(phoneInput) {
@@ -497,11 +468,16 @@ export async function completeSignup(input = {}) {
     return { status: 400, error: "Enter a valid state" };
   }
 
-  const serviceability = checkMockServiceability(pincode);
-  if (serviceability.status !== 200 || !serviceability.serviceable) {
+  const deliveryServiceUrl = process.env.DELIVERY_SERVICE_URL ?? "http://delivery:3000";
+  const serviceabilityResponse = await fetch(
+    `${deliveryServiceUrl}/api/delivery/serviceability/${encodeURIComponent(pincode)}`,
+    { signal: AbortSignal.timeout(3000) },
+  );
+  const serviceability = await serviceabilityResponse.json();
+  if (!serviceabilityResponse.ok || !serviceability.serviceable) {
     return {
-      status: serviceability.status === 200 ? 422 : serviceability.status,
-      error: serviceability.status === 200
+      status: serviceabilityResponse.status === 200 ? 422 : serviceabilityResponse.status,
+      error: serviceabilityResponse.status === 200
         ? serviceability.message
         : serviceability.error,
     };

@@ -1,0 +1,18 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: bagit-db-migrate
+spec:
+  backoffLimit: 2
+  template:
+    spec:
+      restartPolicy: OnFailure
+      containers:
+        - name: migrate
+          image: bagit-db-migrate:local
+          imagePullPolicy: IfNotPresent
+          envFrom:
+            - configMapRef:
+                name: bagit-services
+            - secretRef:
+                name: bagit-database

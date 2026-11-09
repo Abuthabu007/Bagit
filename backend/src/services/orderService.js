@@ -58,6 +58,26 @@ export async function listOrders(customerId) {
   return [...orders.values()];
 }
 
+async function requestCatalog(path, items) {
+  const catalogUrl = process.env.CATALOG_SERVICE_URL ?? "http://catalog:3000";
+  const response = await fetch(`${catalogUrl}/internal/inventory/${path}`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "X-Internal-Service-Token": process.env.INTERNAL_SERVICE_TOKEN ?? "",
+    },
+    body: JSON.stringify({ items }),
+    signal: AbortSignal.timeout(5000),
+  });
+  const body = response.status === 204 ? {} : await response.json();
+  if (!response.ok) {
+    const error = new Error(body.error ?? `Catalog service returned ${response.status}`);
+    error.status = response.status;
+    throw error;
+  }
+  return body;
+}
+
 export async function createOrder(customerId, input = {}) {
   const items = Array.isArray(input.items)
     ? input.items
@@ -88,50 +108,30 @@ export async function createOrder(customerId, input = {}) {
     requestedItems.push({ productId: item.productId, quantity: item.quantity });
   }
 
-  const client = await pool.connect();
-
+  let reservedItems;
   try {
+    ({ items: reservedItems } = await requestCatalog("reserve", requestedItems));
+  } catch (error) {
+    if (error.status) {
+      return { status: error.status, error: error.message };
+    }
+    console.error("Could not reserve catalog inventory:", error);
+    return { status: 503, error: "Catalog service is temporarily unavailable" };
+  }
+
+  let client;
+  let transactionOpen = false;
+  try {
+    client = await pool.connect();
     await client.query("BEGIN");
-
-    const productResult = await client.query(
-      `SELECT id, name, price_cents, currency, stock
-       FROM products
-       WHERE id = ANY($1::text[])
-       ORDER BY id
-       FOR UPDATE`,
-      [requestedItems.map((item) => item.productId)],
-    );
-    const products = new Map(productResult.rows.map((product) => [product.id, product]));
-
-    if (products.size !== requestedItems.length) {
-      await client.query("ROLLBACK");
-      return { status: 404, error: "One or more products could not be found" };
-    }
-
-    for (const item of requestedItems) {
-      const product = products.get(item.productId);
-      if (product.stock < item.quantity) {
-        await client.query("ROLLBACK");
-        return {
-          status: 409,
-          error: `Not enough stock available for ${product.name}`,
-        };
-      }
-    }
-
-    const currencies = new Set(
-      [...products.values()].map((product) => product.currency.trim()),
-    );
-    if (currencies.size !== 1) {
-      await client.query("ROLLBACK");
-      return { status: 409, error: "Products in one order must use the same currency" };
-    }
+    transactionOpen = true;
 
     const orderId = randomUUID();
     const sequenceResult = await client.query(
       "SELECT nextval('order_number_seq') AS sequence_value",
     );
     const orderNumber = formatOrderNumber(sequenceResult.rows[0].sequence_value);
+    const currency = reservedItems[0].currency;
     const orderResult = await client.query(
       `INSERT INTO orders (id, order_number, customer_id, status)
        VALUES ($1, $2, $3, 'pending')
@@ -139,19 +139,7 @@ export async function createOrder(customerId, input = {}) {
       [orderId, orderNumber, customerId],
     );
 
-    const orderItems = requestedItems.map((item) => {
-      const product = products.get(item.productId);
-      return {
-        productId: product.id,
-        productName: product.name,
-        quantity: item.quantity,
-        unitPriceCents: product.price_cents,
-        totalCents: product.price_cents * item.quantity,
-        currency: product.currency.trim(),
-      };
-    });
-
-    for (const item of orderItems) {
+    for (const item of reservedItems) {
       await client.query(
         `INSERT INTO order_items (
            order_id, product_id, product_name, quantity, unit_price_cents, currency
@@ -166,31 +154,40 @@ export async function createOrder(customerId, input = {}) {
           item.currency,
         ],
       );
-      await client.query(
-        `UPDATE products
-         SET stock = stock - $1
-         WHERE id = $2`,
-        [item.quantity, item.productId],
-      );
     }
 
     await client.query("COMMIT");
-
+    transactionOpen = false;
     return {
       status: 201,
       order: {
         id: orderNumber,
-        items: orderItems,
-        totalCents: orderItems.reduce((total, item) => total + item.totalCents, 0),
-        currency: orderItems[0].currency,
+        items: reservedItems,
+        totalCents: reservedItems.reduce((total, item) => total + item.totalCents, 0),
+        currency,
         status: "pending",
         createdAt: orderResult.rows[0].created_at.toISOString(),
       },
     };
   } catch (error) {
-    await client.query("ROLLBACK");
+    if (transactionOpen) {
+      try {
+        await client.query("ROLLBACK");
+      } catch (rollbackError) {
+        console.error("Could not roll back failed order transaction:", rollbackError);
+      }
+    }
+    try {
+      await requestCatalog("release", reservedItems);
+    } catch (releaseError) {
+      console.error("Failed to release catalog inventory after order failure:", releaseError);
+      throw new AggregateError(
+        [error, releaseError],
+        "Order creation failed and catalog inventory compensation also failed",
+      );
+    }
     throw error;
   } finally {
-    client.release();
+    client?.release();
   }
 }

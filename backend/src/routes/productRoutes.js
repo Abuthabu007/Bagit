@@ -3,9 +3,12 @@ import {
   findProductById,
   listCategories,
   listProducts,
+  releaseInventory,
+  reserveInventory,
 } from "../services/productService.js";
 
 export const productRoutes = Router();
+export const inventoryRoutes = Router();
 
 productRoutes.get("/", async (_request, response) => {
   response.json(await listProducts({
@@ -30,4 +33,20 @@ productRoutes.get("/:productId", async (request, response) => {
   }
 
   return response.json(product);
+});
+
+inventoryRoutes.post("/reserve", async (request, response) => {
+  const result = await reserveInventory(request.body?.items);
+  if (result.error) {
+    return response.status(result.status).json({ error: result.error });
+  }
+  return response.status(200).json({ items: result.items });
+});
+
+inventoryRoutes.post("/release", async (request, response) => {
+  const result = await releaseInventory(request.body?.items);
+  if (result.error) {
+    return response.status(result.status).json({ error: result.error });
+  }
+  return response.status(204).end();
 });

@@ -1,32 +1,27 @@
-import { getSessionCustomer } from "../services/authService.js";
-
-function getSessionToken(request) {
-  const cookie = request.headers.cookie
-    ?.split(";")
-    .map((part) => part.trim())
-    .find((part) => part.startsWith("bagit_session="));
-
-  if (!cookie) {
-    return undefined;
-  }
-
-  try {
-    return decodeURIComponent(cookie.slice("bagit_session=".length));
-  } catch {
-    return undefined;
-  }
-}
-
 export async function requireCustomer(request, response, next) {
   try {
-    const session = await getSessionCustomer(getSessionToken(request));
-    if (!session) {
+    const identityUrl = process.env.IDENTITY_SERVICE_URL ?? "http://identity:3000";
+    const identityResponse = await fetch(`${identityUrl}/internal/session`, {
+      headers: {
+        cookie: request.headers.cookie ?? "",
+        "X-Internal-Service-Token": process.env.INTERNAL_SERVICE_TOKEN ?? "",
+      },
+      signal: AbortSignal.timeout(3000),
+    });
+
+    if (identityResponse.status === 401) {
       return response.status(401).json({ error: "Please sign in to access your orders" });
     }
+    if (!identityResponse.ok) {
+      console.error(`Identity service returned ${identityResponse.status} during session validation`);
+      return response.status(503).json({ error: "Authentication service is temporarily unavailable" });
+    }
 
-    request.customer = session.customer;
+    const session = await identityResponse.json();
+    request.customer = { id: session.customerId };
     return next();
   } catch (error) {
-    return next(error);
+    console.error("Could not validate customer session with identity service:", error);
+    return response.status(503).json({ error: "Authentication service is temporarily unavailable" });
   }
 }
